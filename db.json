@@ -1,0 +1,220 @@
+{
+    "cards": [
+      {
+        "name": "Rider",
+        "number": "1",
+        "leftMeanings": ["energetic", "passionate", "fast"],
+        "rightMeanings": ["passion", "activity", "messages"]
+      },
+      {
+        "name": "Clover",
+        "number": "2",
+        "leftMeanings": ["lucky", "lighthearted", "happy"],
+        "rightMeanings": ["happiness", "opportunity", "luck"]
+      },
+      {
+        "name": "Ship",
+        "number": "3",
+        "leftMeanings": ["distant", "adventurous", "faraway"],
+        "rightMeanings": ["travel", "departure", "adventure"]
+      },
+      {
+        "name": "House",
+        "number": "4",
+        "leftMeanings": ["safe", "traditional", "established"],
+        "rightMeanings": ["home", "establishment", "safety"]
+      },
+      {
+        "name": "Tree",
+        "number": "5",
+        "leftMeanings": ["growing", "grounded", "spiritual"],
+        "rightMeanings": ["growth", "spirituality", "health"]
+      },
+      {
+        "name": "Clouds",
+        "number": "6",
+        "leftMeanings": ["confused", "uncertain", "misunderstood"],
+        "rightMeanings": ["confusion", "uncertainty", "misunderstanding"]
+      },
+      {
+        "name": "Snake",
+        "number": "7",
+        "leftMeanings": ["seductive", "deceptive", "sexual"],
+        "rightMeanings": ["desire", "deception", "sexuality"]
+      },
+      {
+        "name": "Coffin",
+        "number": "8",
+        "leftMeanings": ["ending", "grieving", "mournful"],
+        "rightMeanings": ["loss", "grief", "mourning"]
+      },
+      {
+        "name": "Bouquet",
+        "number": "9",
+        "leftMeanings": ["pleasant", "cordial", "polite"],
+        "rightMeanings": ["etiquette", "flattery", "appreciation"]
+      },
+      {
+        "name": "Scythe",
+        "number": "10",
+        "leftMeanings": ["accidental", "hasty", "dangerous"],
+        "rightMeanings": ["warning", "accident", "danger"]
+      },
+      {
+        "name": "Whip",
+        "number": "11",
+        "leftMeanings": ["conflicting", "argumentative", "opposing"],
+        "rightMeanings": ["conflict", "discussions", "arguments"]
+      },
+      {
+        "name": "Birds",
+        "number": "12",
+        "leftMeanings": ["worried", "excited", "anxious"],
+        "rightMeanings": ["worry", "excitement", "gossip"]
+      },
+      {
+        "name": "Child",
+        "number": "13",
+        "leftMeanings": ["new", "playful", "innocent"],
+        "rightMeanings": ["inexperience", "immaturity", "innocence"]
+      },
+      {
+        "name": "Fox",
+        "number": "14",
+        "leftMeanings": ["selfish", "tricky", "cunning"],
+        "rightMeanings": ["selfishness", "trick", "caution"]
+      },
+      {
+        "name": "Bear",
+        "number": "15",
+        "leftMeanings": ["powerful", "dominant", "influential"],
+        "rightMeanings": ["power", "influence", "leadership"]
+      },
+      {
+        "name": "Stars",
+        "number": "16",
+        "leftMeanings": ["hopeful", "inspiring", "optimistic"],
+        "rightMeanings": ["hope", "inspiration", "dreams"]
+      },
+      {
+        "name": "Stork",
+        "number": "17",
+        "leftMeanings": ["changing", "transitioning", "recurring"],
+        "rightMeanings": ["change", "transition", "cycle"]
+      },
+      {
+        "name": "Dog",
+        "number": "18",
+        "leftMeanings": ["loyal", "friendly", "obedient"],
+        "rightMeanings": ["loyalty", "friendship", "obedience"]
+      },
+      {
+        "name": "Tower",
+        "number": "19",
+        "leftMeanings": ["authoritative", "lonely", "arrogant"],
+        "rightMeanings": ["authority", "loneliness", "arrogance"]
+      },
+      {
+        "name": "Garden",
+        "number": "20",
+        "leftMeanings": ["public", "social", "cultural"],
+        "rightMeanings": ["society", "culture", "network"]
+      },
+      {
+        "name": "Mountain",
+        "number": "21",
+        "leftMeanings": ["difficult", "problematic", "challenging"],
+        "rightMeanings": ["difficulty", "obstacle", "challenge"]
+      },
+      {
+        "name": "Crossroads",
+        "number": "22",
+        "leftMeanings": ["hesitating", "decisive", "opportunistic"],
+        "rightMeanings": ["choices", "opportunities", "decisions"]
+      },
+      {
+        "name": "Mice",
+        "number": "23",
+        "leftMeanings": ["dwindling", "defective", "diseased"],
+        "rightMeanings": ["deficiency", "destruction", "disease"]
+      },
+      {
+        "name": "Heart",
+        "number": "24",
+        "leftMeanings": ["loving", "romantic", "soft"],
+        "rightMeanings": ["love", "romance", "charity"]
+      },
+      {
+        "name": "Ring",
+        "number": "25",
+        "leftMeanings": ["committed", "honorable", "promised"],
+        "rightMeanings": ["commitment", "honor", "promise"]
+      },
+      {
+        "name": "Book",
+        "number": "26",
+        "leftMeanings": ["secretive", "educated", "informed"],
+        "rightMeanings": ["secrets", "knowledge", "research"]
+      },
+      {
+        "name": "Letter",
+        "number": "27",
+        "leftMeanings": ["conversational", "expressive", "communicative"],
+        "rightMeanings": ["conversation", "communication", "documents"]
+      },
+      {
+        "name": "Animus",
+        "number": "28",
+        "leftMeanings": ["masculine"],
+        "rightMeanings": ["male", "masculinity"]
+      },
+      {
+        "name": "Anima",
+        "number": "29",
+        "leftMeanings": ["feminine"],
+        "rightMeanings": ["female", "femininity"]
+      },
+      {
+        "name": "Lily",
+        "number": "30",
+        "leftMeanings": ["sensual", "ethical", "wise"],
+        "rightMeanings": ["sensuality", "ethics", "wisdom"]
+      },
+      {
+        "name": "Sun",
+        "number": "31",
+        "leftMeanings": ["happy", "successful", "warm"],
+        "rightMeanings": ["happiness", "victory", "truth"]
+      },
+      {
+        "name": "Moon",
+        "number": "32",
+        "leftMeanings": ["subconscious", "intuitive", "emotional"],
+        "rightMeanings": ["subconscious", "fear", "fantasy"]
+      },
+      {
+        "name": "Key",
+        "number": "33",
+        "leftMeanings": ["open", "revealing", "liberating"],
+        "rightMeanings": ["achievement", "liberation", "revelation"]
+      },
+      {
+        "name": "Fish",
+        "number": "34",
+        "leftMeanings": ["financial", "abundant", "valuable"],
+        "rightMeanings": ["finances", "business", "abundance"]
+      },
+      {
+        "name": "Anchor",
+        "number": "35",
+        "leftMeanings": ["stable", "restrained", "secure"],
+        "rightMeanings": ["stability", "restraint", "resilience"]
+      },
+      {
+        "name": "Cross",
+        "number": "36",
+        "leftMeanings": ["burdening", "dutiful", "suffering"],
+        "rightMeanings": ["burden", "duty", "suffering"]
+      }
+    ]
+}
