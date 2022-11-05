@@ -35,6 +35,7 @@
 }
 
 .picked{
-    visibility: hidden;
+    visibility: hidden; 
     z-index: -100;
-}
+} 
+/* REVIEW: maybe switch to display none so it doesn't block other cards when hidden? */

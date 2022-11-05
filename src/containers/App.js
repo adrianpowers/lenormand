@@ -113,19 +113,14 @@ class App extends Component {
               ? <h2>Your card reading:</h2>
               : <h2>Choose your second card</h2>
         }
-        {/* <h2>You picked {this.state.card1.name} and {this.state.card2.name}</h2> */}
 
         <Hand cardOne={this.state.card1} cardTwo={this.state.card2} />
-
-        {/* {
-          (Object.keys(this.state.card1).length !== 0)
-            ? <h2>{this.state.card1.name}</h2>
-            : <p>Nothing yet</p>
-        } */}
 
       </div>
     );
   }
 }
+
+// TODO: Clean this shit up
 
 export default App;

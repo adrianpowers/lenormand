@@ -9,7 +9,8 @@ const Button = ({shuffleHandler, resetHandler, bothPicked}) => {
                 onClick={shuffleHandler}
             >
                 <h2>Shuffle Deck</h2>
-            </button>
+            </button> 
+            // BUG: clicking shuffle adds the chosen card's visibility when it shouldn't
         )
     } else {
         return(

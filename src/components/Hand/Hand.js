@@ -1,7 +1,5 @@
 import React from 'react';
 import frame from '../../images/frame1.png';
-import backOfCard from '../../images/back01.jpg'
-import backOfCardDark from '../../images/back03.jpg'
 import './Hand.css';
 
 const Hand = ({ cardOne, cardTwo }) => {
@@ -19,7 +17,8 @@ const Hand = ({ cardOne, cardTwo }) => {
             <div className='cards' id="card1">
                 <div className='reading-top card1'>
                     <img src={frame} alt='back of first card' className='frame' />
-                    <img src={cardOne.image} alt="Card One" className="noCard" />
+                    <img src={cardOne.image} alt="Card One" className="noCard" /> 
+                    {/* REMOVE: Showing the alt tag of the image */}
                 </div>
                 <div className='reading-bottom'>
                     <h2>Adjective</h2>
