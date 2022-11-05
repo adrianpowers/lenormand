@@ -6,15 +6,46 @@
     flex-wrap: wrap;
 }
 
-.cards{
-    height: 350px;
-    background-color: white;
-    overflow-y:hidden;
-    margin: 1em 0;
-}
-
-.handImg {
+.frame {
     height: 103.5%;
+    width: 225px;
     padding:0;
     margin: -7px -9px;
+    z-index: 100;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y:hidden; */
+    
+}
+
+.noCard{
+    /* display:none; */
+    height: 350px;
+    padding:0;
+    margin: 0;
+    z-index: -5;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.card1{
+    z-index: -5;
+    background-color: white;
+}
+
+.card2{
+    z-index: 5;
+    background-color: white;
+}
+
+.reading-top{
+    height: 350px;
+    position: relative;
+    margin: 1em 0 0 0;
+}
+
+.reading-bottom{
+    width: 200px;
 }

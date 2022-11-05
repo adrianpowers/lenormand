@@ -4,7 +4,7 @@ import './App.css';
 import cards from '../cards'
 import Deck from '../components/Deck/Deck';
 import Hand from '../components/Hand/Hand';
-// import Shuffle from '../components/Shuffle/Shuffle';
+import Button from '../components/Button/Button';
 
 class App extends Component {
   constructor(){
@@ -13,25 +13,59 @@ class App extends Component {
       shuffledDeck: [],
       card1: {},
       card2: {},
+      bothPicked: false,
+      isStarting: true,
       isFlipped: false,
-      isStarting: true
+      back1: '',
+      back2: ''
     }
   }
 
   onCardClick = (event) => {
+    let cardOneLength = Object.keys(this.state.card1).length === 0
+    let cardTwoLength = Object.keys(this.state.card2).length === 0
     const cardId = event.target.id;
     const pickedCard = cards.filter(card => card.number === cardId)
-    this.setState({card1: pickedCard[0], isStarting: false})
-    console.log("ON CARD CLICK =================================================================")
-    console.log(pickedCard);
-    console.log(this.state.shuffledDeck);
+      
+      if(cardOneLength){
+        this.setState({card1: pickedCard[0], isStarting: false})
+        event.target.classList.add("picked");
+      }
+      if(!cardOneLength && cardTwoLength){
+        this.setState({card2: pickedCard[0], bothPicked: true})
+        event.target.classList.add("picked");
+        event.target.parentElement.parentElement.classList.add("disabled");
+    }
+  }
+
+  resetHandler = () => {
+    const resetShuffledCards = this.shuffle(cards);
+    this.setState({
+      shuffledDeck: [...resetShuffledCards],
+      card1: {},
+      card2: {},
+      bothPicked: false,
+      isStarting: true,
+      isFlipped: false,
+      back1: '',
+      back2: ''
+    })
+    document.querySelector('.cardContainer').parentElement.classList.remove("disabled");
+    let cardList = document.querySelectorAll('.deckImage');
+    cardList.forEach(card =>{
+        const currCardClass = card.classList
+        if(currCardClass.contains('picked')){
+          currCardClass.remove('picked')
+        }
+      }
+    )
   }
 
   shuffle = (deck) => {
     let currDeck = [...deck];
     let currentIndex = currDeck.length,  randomIndex;
 
-    while (currentIndex != 0) {
+    while (currentIndex !== 0) {
 
       // Pick a remaining card.
       randomIndex = Math.floor(Math.random() * currentIndex);
@@ -52,8 +86,6 @@ class App extends Component {
   shuffleHandler = () => {
     const newShuffle = this.shuffle(this.state.shuffledDeck)
     this.setState({shuffledDeck: newShuffle});
-    console.log("ON CLICK =================================================================")
-    console.log(this.state.shuffledDeck)
   }
   
   componentDidMount(){
@@ -61,33 +93,35 @@ class App extends Component {
     this.setState({
       shuffledDeck: [...shuffledCards]
     })
-    console.log("ON MOUNT =================================================================")
-    console.log(this.state.shuffledDeck);
   }
 
   render(){
-    console.log("ON RENDER =================================================================")
-    console.log(this.state.shuffledDeck);
     return(
       <div>
         <h1> Lenormand Reading </h1>
-
-        <button 
-          id="shuffleButton" 
-          onClick={this.shuffleHandler}
-        >
-          <h2>Shuffle Deck</h2>
-        </button>
+        <Button shuffleHandler={this.shuffleHandler} bothPicked={this.state.bothPicked} resetHandler={this.resetHandler} />
 
         <Deck 
           filteredDeck={this.state.shuffledDeck} 
           onCardClick={this.onCardClick} 
         />
 
-        <h2>Pick your {this.state.isStarting ? 'first' : 'second'} card</h2>
-        <h2>You picked {this.state.card1.name} </h2>
+        {
+          (this.state.isStarting) 
+            ? <h2>Choose your first card</h2>
+            : (this.state.bothPicked)
+              ? <h2>Your card reading:</h2>
+              : <h2>Choose your second card</h2>
+        }
+        {/* <h2>You picked {this.state.card1.name} and {this.state.card2.name}</h2> */}
 
-        <Hand />
+        <Hand cardOne={this.state.card1} cardTwo={this.state.card2} />
+
+        {/* {
+          (Object.keys(this.state.card1).length !== 0)
+            ? <h2>{this.state.card1.name}</h2>
+            : <p>Nothing yet</p>
+        } */}
 
       </div>
     );

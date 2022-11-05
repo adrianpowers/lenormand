@@ -25,3 +25,13 @@ h2{
   font-family: 'Tarot';
   font-size: 2em;
 }
+
+span {
+  font-weight: bold;
+}
+
+p{
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
