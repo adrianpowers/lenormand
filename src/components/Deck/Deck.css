@@ -36,4 +36,5 @@
 
 .picked{
     visibility: hidden;
+    z-index: -100;
 }

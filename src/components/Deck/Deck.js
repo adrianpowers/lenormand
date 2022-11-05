@@ -19,7 +19,7 @@ const Deck = ({filteredDeck, onCardClick}) => {
                         src={backOfCard} 
                         alt="back of light card" 
                         id={card.number} 
-                        className='deckImage' 
+                        className='deckImage light' 
                         onClick={onCardClick} 
                     />
                 </div>)
@@ -34,7 +34,7 @@ const Deck = ({filteredDeck, onCardClick}) => {
                         src={backOfCardDark} 
                         alt="back of dark card" 
                         id={card.number} 
-                        className='deckImage' 
+                        className='deckImage dark' 
                         onClick={onCardClick} 
                     />
                 </div>
