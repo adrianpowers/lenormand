@@ -3,12 +3,14 @@
     justify-content:space-around;
     width: 50%;
     margin: 2em auto;
+    flex-wrap: wrap;
 }
 
 .cards{
     height: 350px;
     background-color: white;
     overflow-y:hidden;
+    margin: 1em 0;
 }
 
 .handImg {
