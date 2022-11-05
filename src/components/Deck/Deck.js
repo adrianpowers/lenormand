@@ -6,7 +6,7 @@ import backOfCardDark from '../../images/back03.jpg'
 const Deck = ({filteredDeck, onCardClick}) => {
     const laidCards = filteredDeck.map( (card, index) => {
         
-        const randomNum = Math.floor(Math.random() * (10 - -10) -10 )
+        const randomNum = Math.floor(Math.random() * (10 - -10) -10 ) //QUESTION: How do I get this to stop moving the cards unless the state changes?
 
         if(index % 2 === 0) {
             return (

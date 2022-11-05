@@ -29,3 +29,9 @@
     box-shadow:0 0 15px #FFF0B1;
 }
 
+.picked {
+    pointer-events: none;
+    filter: grayscale(100%);
+    border: 2px solid black;
+    visibility: hidden;
+}
