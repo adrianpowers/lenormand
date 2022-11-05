@@ -1,0 +1,31 @@
+.deckContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    width: 95%;
+    margin: 2em auto;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.cardContainer {
+    padding: 0;
+    margin: -1em;
+}
+
+.deckImage {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding:0;
+    transition: transform 750ms, border 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.deckImage:hover {
+    transform: translateY(-20px);
+    box-shadow:0 0 15px #FFF0B1;
+}
+

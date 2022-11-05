@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Tarot;
+  src: url("./Tarot.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Kallisa;
+  src: url("./Kallisa.ttf") format("truetype");
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./background.jpg');
+}
+
+h1{
+  font-family: 'Kallisa';
+  font-size: 3em;
+  font-weight: 300;
+}
+
+h2{
+  font-family: 'Tarot';
+  font-size: 2em;
 }

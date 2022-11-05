@@ -1,0 +1,18 @@
+.handContainer{
+    display: flex;
+    justify-content:space-around;
+    width: 50%;
+    margin: 2em auto;
+}
+
+.cards{
+    height: 350px;
+    background-color: white;
+    overflow-y:hidden;
+}
+
+.handImg {
+    height: 103.5%;
+    padding:0;
+    margin: -7px -9px;
+}
