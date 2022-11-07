@@ -17,8 +17,7 @@ const Hand = ({ cardOne, cardTwo }) => {
             <div className='cards' id="card1">
                 <div className='reading-top card1'>
                     <img src={frame} alt='back of first card' className='frame' />
-                    <img src={cardOne.image} alt="Card One" className="noCard" /> 
-                    {/* REMOVE: Showing the alt tag of the image */}
+                    <img src={cardOne.image} alt="" className="noCard" /> 
                 </div>
                 <div className='reading-bottom'>
                     <h2>Adjective</h2>
@@ -28,7 +27,7 @@ const Hand = ({ cardOne, cardTwo }) => {
             <div className='cards' id="card2">
                 <div className='reading-top card2'>
                     <img src={frame} alt='back of first card' className='frame' />
-                    <img src={cardTwo.image} alt="Card Two" className="noCard" />
+                    <img src={cardTwo.image} alt="" className="noCard" />
                 </div>
                 <div className='reading-bottom'>
                     <h2>Noun</h2>
